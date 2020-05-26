@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-26T02:39:17.823Z</updated>
+  <updated>2020-05-26T02:50:33.083Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://yoursite.com/2020/05/25/pre-post/"/>
     <id>http://yoursite.com/2020/05/25/pre-post/</id>
     <published>2020-05-24T16:00:00.000Z</published>
-    <updated>2020-05-26T02:39:17.823Z</updated>
+    <updated>2020-05-26T02:50:33.083Z</updated>
     
     <content type="html"><![CDATA[<p>sdfhsdf<br>sdfsdf<br>sdffssd<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var a = [int]()</span><br></pre></td></tr></table></figure></p>]]></content>
     
@@ -33,6 +33,8 @@
       
     
     </summary>
+    
+      <category term="ARTS" scheme="http://yoursite.com/categories/ARTS/"/>
     
     
   </entry>
