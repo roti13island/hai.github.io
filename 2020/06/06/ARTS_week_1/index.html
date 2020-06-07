@@ -11,8 +11,9 @@
 <h2 id="Review"><a href="#Review" class="headerlink" title="Review"></a>Review</h2><p><a href="https://www.mikeash.com/pyblog/friday-qa-2015-07-17-when-to-use-swift-structs-and-classes.html" target="_blank" rel="noopener">When to Use Swift Structs and Classes</a></p>
 <p>本文是一篇老文章了，来自<a href="https://www.mikeash.com/" target="_blank" rel="noopener">Mike Ash</a> 。因为之前在面试中常被问到<code>class</code>与<code>struct</code>的区别。所以想分享一下这篇文章。<br>其实最大的区别就是语义上的区别了，也是本文着重想要表达、同时也是我们日常使用时最应注意的问题：</p>
 <blockquote>
-<p><code>struct</code>是值类型，<code>class</code>是引用类型<br>语义上的区别背后是两者存储方式的不同，<code>struct</code>存储在<strong>栈</strong>上，<code>class</code>存储在<strong>堆</strong>上，而<code>class</code>的引用保存在<strong>栈</strong>上。</p>
+<p><code>struct</code>是值类型，<code>class</code>是引用类型</p>
 </blockquote>
+<p>语义上的区别背后是两者存储方式的不同，<code>struct</code>存储在<strong>栈</strong>上，<code>class</code>存储在<strong>堆</strong>上，而<code>class</code>的引用保存在<strong>栈</strong>上。</p>
 <p>对于<strong>值类型</strong>，当你对数据进行赋值时，你得到的是该数据的拷贝。而对于<strong>引用类型</strong>，你得到的将是对该数据引用的拷贝。</p>
 <p>文中还对<strong>值语义</strong>进行了探讨，虽然很多语言坚持“万物皆对象”，甚至数字都是<strong>引用类型</strong>的，但它们不免会使用<code>不可变类型</code>，对于这样的类型而言，<strong>值/引用</strong>的区别消失了，或者说区别仅仅在于性能表现上了。</p>
 <p>如何选择<strong>值类型</strong>或<strong>引用类型</strong>的核心问题在当数据被赋值后你希望得到一份数据的拷贝还是一份引用的拷贝，这就需要在具体的场景中分析了。</p>
